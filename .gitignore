@@ -1,0 +1,4 @@
+# Ignore the currently-in-use Fallout76 prefs/custom ini
+/Fallout76Prefs.ini
+Fallout76Custom.ini
+*/*Modlist.ini
