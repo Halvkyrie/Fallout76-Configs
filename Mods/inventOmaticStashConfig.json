@@ -70,7 +70,7 @@
 		"GRP__PROTECT_GLOBAL":["#", "+", "|"],
 		"GRP__SERUMS_USE_RAID":["Serum: Adrenal Reaction", "Serum: Bird Bones", "Serum: Eagle Eyes", "Serum: Egg Head", "Serum: Marsupial", "Serum: Speed Demon", "Serum: Herbivore"],
 		"GRP__FOOD_USE_RAID":["Company Tea","Cranberry Relish","Brain Bombs","Steeped Ash Rose Tea","Steeped Melon Blossom Chai","Steeped Gourd Blossom Tea","Infused Soot Flower Tea","Steeped Fern Flower Tea","Sweet Mutfruit Tea","Sweetwater Special Blend ","Smoked Mirelurk Fillets"],
-		"GRP__NOKEEP_SERUMS":["Serum: Carnivore", "Serum: Chameleon", "Serum: Empath", "Serum: Scaly Skin", "Serum: Grounded", "Serum: Healing Factor", "Serum: Herd Mentality", "Serum: Plague Walker"]
+		"GRP__SERUMS_NOKEEP":["Serum: Carnivore", "Serum: Chameleon", "Serum: Empath", "Serum: Scaly Skin", "Serum: Grounded", "Serum: Healing Factor", "Serum: Herd Mentality", "Serum: Plague Walker", "Serum: Talons"]
 	},
 	"buyConfig": {
 		"name": "AutoBuy",
