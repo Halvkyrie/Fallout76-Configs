@@ -1,1 +1,580 @@
-C:/Program Files (x86)/Steam/steamapps/common/Fallout76/Data/inventOmaticStashConfig.json
+{
+	"$schema": "https://raw.githubusercontent.com/MsZelia/JSONConfigManager/refs/heads/main/JSONConfigManager/Schemas/inventOmaticStashConfig.json",
+	"debug": false,
+	"debugKeys": false,
+	"showDurabilityValue": true,
+	"maintainScrollPosition": true,
+	"hideTakeAllConfirm": true,
+	"hideHeader": true,
+	"hideVignette": true,
+	"notifyLegendaryModLearnedOnScrap": true,
+	"showCategoryItemCount": true,
+	// "defaultSelectedTab": "WEAPON",
+	"legendaryModsConfig": {
+		"enabled": false,
+		"showUnknownModsAmongAllChars": false,
+		"showInWorkbench": true,
+		"showInStash": true,
+		"showInVendors": true,
+		"showInWorldContainers": true
+	},
+	"categoryWeightConfig": {
+		"enabled": true,
+		"debug": true,
+		"hotkey": 187, // =
+		"weightLabelWidth": 200,
+		"itemCardDelay":75,
+		"itemCardFilters": ["WEAPON", "ARMOR", "FOOD_WATER", "AID", "JUNK", "AMMO"]
+	},
+	"protectionConfig": {
+		"saleProtection": {
+			"enabled": true,
+			"favorite": true,
+			"equipped": true,
+			"maxCurrency": false,
+			"named": true,
+			"matchMode": "CONTAINS",
+			"itemNames": ["GRP__PROTECT_GLOBAL"]
+		},
+		"scrapProtection": {
+			"enabled": true,
+			"favorite": true,
+			"equipped": true,
+			"named": true,
+			"matchMode": "CONTAINS",
+			"itemNames": ["GRP__PROTECT_GLOBAL"]
+		},
+		"transferProtection": {
+			"enabled": true,
+			"favorite": false,
+			"equipped": true,
+			"named": false,
+			"matchMode": "CONTAINS",
+			"itemNames": ["GRP__PROTECT_GLOBAL"]
+		}
+	},
+	"tabsConfig": {
+		"enabled": true,
+		"maxTabs": 14,
+		"labelWidthScale": 1.1
+	},
+	"currencyLimitConfig": {
+		"enabled": true,
+		"defaultColor": "0x00ff00",
+		"limitLow": 80,
+		"limitLowColor": "0xffff00",
+		"limitHigh": 90,
+		"limitHighColor": "0xff0000"
+	},
+	"itemNamesGroupConfig": {
+		"GRP__PROTECT_GLOBAL":["#", "+", "|"],
+		"GRP__SERUMS_USE_RAID":["Serum: Adrenal Reaction", "Serum: Bird Bones", "Serum: Eagle Eyes", "Serum: Egg Head", "Serum: Marsupial", "Serum: Speed Demon", "Serum: Herbivore"],
+		"GRP__FOOD_USE_RAID":["Company Tea","Cranberry Relish","Brain Bombs","Steeped Ash Rose Tea","Steeped Melon Blossom Chai","Steeped Gourd Blossom Tea","Infused Soot Flower Tea","Steeped Fern Flower Tea","Sweet Mutfruit Tea","Sweetwater Special Blend ","Smoked Mirelurk Fillets"],
+		"GRP__NOKEEP_SERUMS":["Serum: Carnivore", "Serum: Chameleon", "Serum: Empath", "Serum: Scaly Skin", "Serum: Grounded", "Serum: Healing Factor", "Serum: Herd Mentality", "Serum: Plague Walker"]
+	},
+	"buyConfig": {
+		"name": "AutoBuy",
+		"enabled": true,
+		"debug": false,
+		"hotkey": 66, // B
+		"showButton": true,
+		"maxItems": 50,
+		"delayNpcVendor": 50,
+		"delayCampVendor": 1250,
+		"configs": [
+			{
+				"enabled": true,
+				"amount": 0,
+				"maxPrice": 25,
+				"types": ["FOOD_WATER"],
+				"matchMode": "EXACT",
+				"itemNames": ["Salt", "Pepper", "Spices", "# Sugar Bombs (Rad)", "Bubblegum", "Gum Drops"]
+			},
+			{
+				"enabled": true,
+				"amount": 0,
+				"maxPrice": 10,
+				"types": ["MISC"],
+				"matchMode": "EXACT",
+				"itemNames": ["Bobby Pin", "Blobby Pin"]
+			},
+			{
+				"enabled": true,
+				"amount": 0,
+				"maxPrice": 60,
+				"types": ["FOOD_WATER"],
+				"matchMode": "EXACT",
+				"itemNames": ["Nuka-Cola: Classic", "Nuka-Cola: Quantum", "Vodka "]
+			},
+			{
+				"enabled": true,
+				"amount": 0,
+				"maxPrice": 50,
+				"types": ["AID"],
+				"matchMode": "EXACT",
+				"itemNames": ["Blood Pack "]
+			},
+			{
+				"enabled": false,
+				"amount": 0,
+				"maxPrice": 2000,
+				"types": ["MISC"],
+				"matchMode": "EXACT",
+				"itemNames": ["Recall Keycard Circuit Board"]
+			},
+			{
+				"enabled": true,
+				"amount": 0,
+				"maxPrice": 2000,
+				"types": ["NOTES"],
+				"matchMode": "CONTAINS",
+				"itemNames": ["Plan: Dense Marine", "Plan: Dense Trapper"]
+			},
+			{
+				"enabled": false,
+				"amount": 0,
+				"maxPrice": 2000,
+				"types": ["MISC"],
+				"matchMode": "EXACT",
+				"itemNames": ["Empty Mole Miner Pail"]
+			},
+			{
+				"enabled": true,
+				"amount": 0,
+				"maxPrice": 500,
+				"types": ["MODS"],
+				"matchMode": "CONTAINS",
+				"itemNames": ["Enclave Plasma Gun"]
+			},
+			{
+				"enabled": false,
+				"amount": 0,
+				"maxPrice": 500,
+				"types": ["JUNK"],
+				"matchMode": "NOT_CONTAINS",
+				"itemNames": ["GRP__PROTECT_GLOBAL"]
+			},
+			{
+				"enabled": false,
+				"amount": 0,
+				"maxPrice": 500,
+				"types": ["JUNK"],
+				"matchMode": "CONTAINS",
+				"itemNames": ["(NC)"]
+			},
+			{
+				"enabled": true,
+				"amount": 0,
+				"maxPrice": 500,
+				"types": ["APPAREL"],
+				"matchMode": "CONTAINS",
+				"itemNames": ["Wasteland Rags Hood"]
+			}
+		]
+	},
+	"campAssignConfig": {
+		"name": "Assign R_AMOUNT",
+		"enabled": true,
+		"debug": false,
+		"showButton": true,
+		"hotkey": 70, // F
+		"amount": 6,
+		"delay": 600
+	},
+	"npcSellConfig": {
+		"name": "AutoSell",
+		"enabled": true,
+		"showButton": true,
+		"hotkey": 78, // N
+		"maxItems": 100,
+		"delay": 25,
+		"configs": [
+			{
+				"enabled": true,
+				"sellFavorite": false,
+				"sellEquipped": false,
+				"amount": 0,
+				"types": ["MISC"],
+				"matchMode": "EXACT",
+				"itemNames": ["Treasury Note"]
+			},
+			{
+				"enabled": true,
+				"sellFavorite": false,
+				"sellEquipped": false,
+				"amount": -5,
+				"types": ["AID"],
+				"matchMode": "CONTAINS",
+				"itemNames": ["GRP__SERUMS_USE_RAID"]
+			},
+			{
+				"enabled": true,
+				"sellFavorite": false,
+				"sellEquipped": false,
+				"types": ["AID"],
+				"matchMode": "CONTAINS",
+				"itemNames": ["GRP__NOKEEP_SERUMS"]
+			},
+			{
+				"enabled": true,
+				"sellFavorite": false,
+				"sellEquipped": false,
+				"types": ["WEAPON"],
+				"matchMode": "CONTAINS",
+				"itemNames": ["", ""]
+			}
+		]
+		
+	},
+	"lootConfig": {
+		"name": "AutoLoot",
+		"enabled": true,
+		"debug": false,
+		"showButton": true,
+		"hotkey": 70, // F
+		"maxItems": 100,
+		"delay": 25,
+		"transferLegendaries": true,
+        "transferTaggedForSearch": true,
+		"matchMode": "CONTAINS",
+		"itemNames": ["Cap ±", "Caps ±", "blobby pin", "bobby pin", "Pleasant Valley Claim Ticket",
+			"", "", "", "", "", "", "", "",
+			"Nuka", "Sugar", "Pepper", "Salt", "Spices", "Honey"
+		]
+	},
+	"scrapConfig": {
+		"name": "AutoScrap",
+		"testRun": false,
+		"enabled": true,
+		"debug": false,
+		"showButton": true,
+		"hotkey": 112, // F1
+		"maxItems": 150,
+		"delay": 150,
+		"configs": [
+			{
+				"README": "Scraps all Legendaries with special character exceptions",
+                "enabled": true,
+                "scrapFavorite": false,
+                "scrapEquipped": false,
+                "onlyLegendaries": true,
+                "matchMode": "CONTAINS",
+                "types": ["WEAPON", "ARMOR"],
+                "excluded": ["GRP__PROTECT_GLOBAL"],
+                "checkCharacterName": true,
+                "characterName": ["Hannah", "Veronica", "Mrs. Tag along", "Sandra"],
+                "checkAccountName": false,
+                "accountName": "none"
+            },
+			{
+				"README": "Scraps all non-legendary weapons/armour",
+				"enabled": true,
+				"scrapFavorite": false,
+				"scrapEquipped": false,
+				"onlyLegendaries": false,
+				"matchMode": "CONTAINS",
+				"types": ["WEAPON", "ARMOR"],
+				"excluded": ["GRP__PROTECT_GLOBAL", "Chinese Stealth Armor", "Hazmat"],
+                "checkCharacterName": true,
+                "characterName": ["Hannah", "Veronica", "Mrs. Tag along", "Sandra"],
+				"checkAccountName": false,
+				"accountName": "none"
+			},
+			{
+				"README": "Scraps all Junk with exceptions",
+				"enabled": true,
+				"scrapFavorite": false,
+				"scrapEquipped": false,
+				"onlyLegendaries": false,
+				"types": ["JUNK"],
+				"matchMode": "CONTAINS",
+				"excluded": ["GRP__PROTECT_GLOBAL",
+				"Bloatfly Gland", "Bloodbug Proboscis", "Stingwing Barb", "Tick Blood Sac",
+				"Cooking Oil", "Digested Goo", "Wendigo Colossus Vocal Sac", "Mysterious Quill",
+				"Beeswax", "Stein"
+				],
+				"checkCharacterName": false,
+				"characterName": "none",
+				"checkAccountName": false,
+				"accountName": "none"
+			}
+		]
+	},
+	"transferConfig": [
+		{
+			"name": "TC General",
+			"enabled": true,
+			"debug": false,
+			"showButton": true,
+			"hotkey": 112, // F1 
+			"amount": 0,
+			"types": ["FOOD_WATER", "AID"],
+			"matchMode": "CONTAINS",
+			"itemNames": [""],
+			"direction": "TO_CONTAINER"
+		},
+		{
+			"name": "TC ",
+			"enabled": true,
+			"debug": false,
+			"showButton": true,
+			"hotkey": 114, // F3
+			"amount": 0,
+			"types": ["MODS"],
+			"matchMode": "CONTAINS",
+			"itemNames": [""],
+			"direction": "TO_CONTAINER"
+		},
+		{
+			"name": "TC TEMP",
+			"enabled": true,
+			"debug": false,
+			"showButton": true,
+			"hotkey": 115, // F4
+			"amount": 0,
+			"delay": 25,
+			"types": ["FOOD_WATER"],
+			"matchMode": "CONTAINS",
+			"itemNames": [""],
+			"direction": "TO_CONTAINER"
+		},
+		{
+			"name": "FC RaidBuffs",
+			"testRun": false,
+			"enabled": true,
+			"debug": true,
+			"showButton": true,
+			"hotkey": 116, // F5
+			"amount": 1,
+			"transferAssigned": true,
+			"singleItemPerName": true,
+			"matchMode": "EXACT",
+			"itemNames": ["GRP__FOOD_USE_RAID"],
+			"direction": "FROM_CONTAINER"
+		},
+		{
+			"name": "FC SaT",
+			"enabled": true,
+			"debug": false,
+			"showButton": true,
+			"hotkey": 119, // F8
+			"amount": 1,
+			"matchMode": "EXACT",
+			"itemNames": ["Bloatfly Gland ", "Bloodbug Proboscis ", "Stingwing Barb ", "Tick Blood Sac "],
+			"direction": "FROM_CONTAINER"
+		},
+		{
+			"name": "TC General: Magazines/Bobbleheads",
+			"enabled": false,
+			"debug": false,
+			"showButton": false,
+			"hotkey": 112, // F1 
+			"amount": 0,
+			"types": ["AID"],
+			"matchMode": "CONTAINS",
+			"itemNames": [
+				"Bobblehead", "Astoundingly Awesome Tales", "Backwoodsman", "Grognak the Barbarian", "Guns and Bullets", "Live & Love", "Scouts' Life",
+				"Tales from the West Virginia Hills", "Tesla Science", "Tumblers Today", "U.S. Covert Operations Manual", "Unstoppables"
+			],
+			"direction": "TO_CONTAINER"
+		},
+		{
+			"name": "TC AIDBOX",
+			"enabled": true,
+			"debug": false,
+			"showButton": true,
+			"checkAccountName": true,
+			"accountName": ["Halvkyrie"],
+			"checkContainerName": true,
+			"containerName": ["AID"],
+			"hotkey": 113, // F2
+			"amount": 0,
+			"types": ["FOOD_WATER", "AID"],
+			"matchMode": "NOT_EXACT",
+			"itemNames": ["# Berry Mentats ", "# Overdrive ", "# Psychobuff ", "Grape Mentats ", 
+			"RadAway: Diluted ", "Stimpak ", "# Antibiotics ", "# RadShield ", "Addictol ", "Lunchbox ¢"
+			],
+			"direction": "TO_CONTAINER"
+		},
+		{
+			"name": "AIDBOX -75",
+			"enabled": true,
+			"debug": false,
+			"showButton": false,
+			"checkAccountName": true,
+			"accountName": ["Halvkyrie"],
+			"checkContainerName": true,
+			"containerName": ["AID"],
+			"hotkey": 113, // F2
+			"amount": 75,
+			"exactAmountInDestination": true,
+			"types": ["AID"],
+			"matchMode": "EXACT",
+			"itemNames": ["RadAway: Diluted ", "Stimpak "],
+			"direction": "FROM_CONTAINER"
+		},
+		{
+			"name": "AIDBOX -30",
+			"enabled": true,
+			"debug": false,
+			"showButton": false,
+			"checkAccountName": true,
+			"accountName": ["Halvkyrie"],
+			"checkContainerName": true,
+			"containerName": ["AID"],
+			"hotkey": 113, // F2
+			"amount": 30,
+			"exactAmountInDestination": true,
+			"types": ["AID"],
+			"matchMode": "EXACT",
+			"itemNames": ["# Antibiotics ", "# Berry Mentats ", "# Overdrive ", "# Psychobuff ", "# RadShield "],
+			"direction": "FROM_CONTAINER"
+		},
+		{
+			"name": "AIDBOX -10",
+			"enabled": true,
+			"debug": false,
+			"showButton": false,
+			"checkAccountName": true,
+			"accountName": ["Halvkyrie"],
+			"checkContainerName": true,
+			"containerName": ["AID"],
+			"hotkey": 113, // F2
+			"amount": 10,
+			"exactAmountInDestination": true,
+			"types": ["AID"],
+			"matchMode": "EXACT",
+			"itemNames": ["Grape Mentats ", "Addictol "],
+			"direction": "FROM_CONTAINER"
+		}
+	],
+	"extractConfig": {
+		"name": "Extract",
+		"enabled": true,
+		"debug": true,
+		"hotkey": 79, // O
+		"showButton": true,
+		"itemCardEntryDelayStep": 100,
+		"additionalItemDataForAll": false,
+		"verboseOutput": false,
+		"apiMethods": [
+			"AccountInfoData",
+			"ActiveEmoteData",
+			"BabylonAvailableMapsData",
+			"BabylonData",
+			"BabylonUIData",
+			"CameraScopeData",
+			"CampSlotsData",
+			"CampVendingOfferData",
+			"CardPacksUIData",
+			"ChallengeCompleteData",
+			"ChallengeData",
+			"ChallengeTrackerData",
+			"ChallengeTrackerUpdateData",
+			"CharacterCardData",
+			"CharacterInfoData",
+			"CharacterNameData",
+			"CompassData",
+			"ContainerOptionsData",
+			"ControlMapData",
+			"ConversationHistoryData",
+			"CreditsMenuShuttle",
+			"CurrencyData",
+			"DailyOpsModalData",
+			"DamageNumberUIData",
+			"DeathData",
+			"DeathReviveData",
+			"DefaultMenuListData",
+			"DialogueData",
+			"EndOfMatchUIData",
+			"ExpeditionLocationsData",
+			"FanfareData",
+			"FanfareQuestAcceptData",
+			"FireForgetEvent",
+			"FriendsContextMenuData",
+			"FriendsListDataCold",
+			"FriendsListDataHot",
+			"FrobberData",
+			"GameStatePromptData",
+			"HelpMenuShuttle",
+			"HitIndicators",
+			"HubMenuShuttle",
+			"HUDColors",
+			"HUDMessageProvider",
+			"HUDModeData",
+			"HUDRightMetersData",
+			"HUDVOFlyoutData",
+			"InventoryItemCardData",
+			"ItemLevelEligibilityData",
+			"KeypadInfoData",
+			"LegendaryPerksMenuData",
+			"LobbyMenuList",
+			"LoginInfoData",
+			"LoginResponseData",
+			"MainMenuListData",
+			"MapMenuData",
+			"MapMenuFlyoutData",
+			"MenuStackData",
+			"MotdData",
+			"MyOffersData",
+			"OtherInventoryData",
+			"OtherInventoryTypeData",
+			"PartyMenuList",
+			"PerkCardGameModeFilterUIData",
+			"PerksUIData",
+			"PhotoGalleryData",
+			"PlayerStatsUIData",
+			"PlayMenuListData",
+			"PowerArmorInfoData",
+			"PublicTeamsData",
+			"PurchaseCompleteData",
+			"PVPData",
+			"PVPScoreEventData",
+			"QuestEventData",
+			"QuestTrackerData",
+			"QuestTrackerProvider",
+			"QuickPlayMenuData",
+			"RadialMenuActiveEffectListData",
+			"RadialMenuExpandMeterData",
+			"RadialMenuStateData",
+			"RecentActivitiesData",
+			"RecentActivityNavigateData",
+			"RecentPlayersListDataCold",
+			"RecentPlayersListDataHot",
+			"ReconMarkerData",
+			"ReputationData",
+			"ScoreboardData",
+			"ScoreboardFilterData",
+			"ScreenResolutionData",
+			"SeasonData",
+			"SeasonRewardClaimedFlyoutData",
+			"SeasonWidgetData",
+			"ServerPromptData",
+			"SocialMenuData",
+			"SocialMenuNavigateData",
+			"SocialNotificationData",
+			"SpeakerNamePosData",
+			"SplashData",
+			"StoreAtomPackData",
+			"StoreCategoryData",
+			"StoreMenuData",
+			"TargetData",
+			"TeamMarkers",
+			"TextInputData",
+			"TheirOffersData",
+			"TutorialModalData",
+			"UpdateRankData",
+			"VoiceChatAreaData",
+			"WorkshopBudgetData",
+			"WorkshopButtonBarData",
+			"WorkshopCategoryData",
+			"WorkshopConfigData",
+			"WorkshopEditModeData",
+			"WorkshopItemCardData",
+			"WorkshopMarkers",
+			"WorkshopMessageData",
+			"WorkshopStateData",
+			"WorldData"
+			]
+	}
+}

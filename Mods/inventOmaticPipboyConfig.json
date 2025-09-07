@@ -1,1 +1,351 @@
-C:/Program Files (x86)/Steam/steamapps/common/Fallout76/Data/inventOmaticPipboyConfig.json
+{
+	"$schema": "https://raw.githubusercontent.com/MsZelia/JSONConfigManager/refs/heads/main/JSONConfigManager/Schemas/inventOmaticPipboyConfig.json",
+	"debug": true,
+	"debugKeys": false,
+	"toggleDebugHotkey": 76, // L
+	"protectionConfig": {
+		"dropProtection": {
+			"enabled": true,
+			"favorite": false,
+			"equipped": true,
+			"named": true,
+			"matchMode": "CONTAINS",
+			"itemNames": ["GRP__PROTECT_GLOBAL"]
+		}
+	},
+	"findForRepair": {
+		"enabled": true,
+		"name": "Fnd4Rep",
+		"showButton": true,
+		"showMessage": false,
+		"hotkey": 75, // K
+		"types": ["WEAPON", "ARMOR", "APPAREL"],
+		"onlyIfEquipped": true,
+		"onlyIfFavorite": true,
+		"conditionUnder": 20
+	},
+	"itemNamesGroupConfig": {
+		"GRP__PROTECT_GLOBAL":["#", "+", "|"],
+		"GRP__SERUMS_USE_RAID":["Serum: Adrenal Reaction", "Serum: Bird Bones", "Serum: Eagle Eyes", "Serum: Egg Head", "Serum: Marsupial", "Serum: Speed Demon", "Serum: Herbivore"		],
+		"GRP__SERUMS_NOKEEP":["Serum: Carnivore", "Serum: Chameleon", "Serum: Empath", "Serum: Scaly Skin", "Serum: Grounded", "Serum: Healing Factor", "Serum: Herd Mentality", "Serum: Plague Walker"],
+		"GRP__FOOD_USE_RAID":["Company Tea","Cranberry Relish","Brain Bombs","Steeped Ash Rose Tea","Steeped Melon Blossom Chai","Steeped Gourd Blossom Tea","Infused Soot Flower Tea","Steeped Fern Flower Tea","Sweet Mutfruit Tea","Sweetwater Special Blend ","Smoked Mirelurk Fillets"]
+	},
+	"drop": {
+		"enabled": true,
+		"configs": [
+			{
+				"enabled": true,
+				"name": "INV Clean",
+				"showButton": true,
+				"hotkey": 120, // F9
+				"amount": 0,
+				"matchMode": "EXACT",
+				"itemNames":["-"],
+				"teenoodleTragedyProtection":{
+					"ignoreNonTradable": false,
+					"typesToDrop":[],
+					"excluded":["GRP__PROTECT_GLOBAL"]
+				}
+			},
+			{
+				"enabled": true,
+				"name": "DR Junk",
+				"showButton": true,
+				"hotkey": 121, // F10
+				"amount": 0,
+				"matchMode": "ALL",
+				"itemNames":["-"],
+				"teenoodleTragedyProtection":{
+					"ignoreNonTradable": false,
+					"typesToDrop":["JUNK"],
+					"excluded":["Legendary Module", "Vault Steel", "Supply Package"]
+				}
+			},
+			{
+				"enabled": true,
+				"name": "DR Raid",
+				"showButton": false,
+				"showMessage": false,
+				"hotkey": 120, // F9
+				"dropFavorite": false,
+				"dropEquipped": false,
+				"matchMode": "CONTAINS",
+				"itemNames": [
+					"GRP__SERUMS_NOKEEP", "Enclave Secret Operative Underarmor", "Basic Repair Kit"
+				],
+				"teenoodleTragedyProtection": {
+					"ignoreLegendaries": false,
+					"ignoreNonTradable": false,
+					"typesToDrop": ["AID", "MISC", "AMMO", "APPAREL"],
+					"excluded": ["GRP__PROTECT_GLOBAL", "Shielded"]
+				}
+			},
+			{
+				"enabled": true,
+				"name": "DR Raid Extra",
+				"showButton": false,
+				"showMessage": false,
+				"hotkey": 120, // F9
+				"amount": -5,
+				"matchMode": "EXACT",
+				"itemNames": ["GRP__SERUMS_USE_RAID"]
+			},
+			{
+				"enabled": true,
+				"name": "Inventory Cleanup 0A: Mixed Drop -75",
+				"showButton": false,
+				"showMessage": false,
+				"hotkey": 120, // F9
+				"amount": -75,
+				"matchMode": "CONTAINS",
+				"itemNames": [
+					"", "", "", "+Purified Water",
+					"Improved Repair Kit", "Scrap Kit ¢"
+				],
+				"dropFavorite": true,
+				"dropEquipped": false,
+				"teenoodleTragedyProtection": {
+					"ignoreLegendaries": false,
+					"ignoreNonTradable": false,
+					"typesToDrop": ["AID", "FOOD_WATER", "MISC"],
+					"excluded": ["GRP__PROTECT_GLOBAL"]
+				}
+			},
+			{
+				"enabled": true,
+				"name": "Inventory Cleanup 0B: Condition Based",
+				"showButton": false,
+				"showMessage": false,
+				"hotkey": 120, // F9
+				"matchMode": "CONTAINS",
+				"conditionUnder": 50,
+				"itemNames": ["Plasma Core"],
+				"dropEquipped": false,
+				"teenoodleTragedyProtection": {
+					"ignoreLegendaries": false,
+					"ignoreNonTradable": false,
+					"typesToDrop": ["AMMO"],
+					"excluded": ["GRP__PROTECT_GLOBAL"]
+				}
+			},
+			{
+				"enabled": true,
+				"name": "Inventory Cleanup 01: Consumable",
+				"showButton": false,
+				"showMessage": false,
+				"hotkey": 120, // F9
+				"amount": 0,
+				"matchMode": "CONTAINS",
+				"itemNames": [
+					"", "", "", "", ""
+				],
+				"dropFavorite": false,
+				"dropEquipped": false,
+				"teenoodleTragedyProtection": {
+					"ignoreLegendaries": false,
+					"ignoreNonTradable": false,
+					"typesToDrop": ["AID", "FOOD_WATER", "MISC"],
+					"excluded": ["GRP__PROTECT_GLOBAL", "Coffee", "Fermentable", "Canned Meat Stew",
+					"Bock", "Hefe", "Egg", "Scorchbeast", "Deathclaw", "Yao Guai", "Squirrel"]
+				}
+			},
+			{
+				"enabled": true,
+				"name": "Inventory Cleanup 02: Weapons + Armour + Apparel",
+				"showButton": false,
+				"showMessage": false,
+				"hotkey": 120, // F9
+				"amount": 0,
+				"matchMode": "CONTAINS",
+				"itemNames": ["", "", ""],
+				"dropFavorite": false,
+				"dropEquipped": false,
+				"teenoodleTragedyProtection": {
+					"ignoreLegendaries": false,
+					"ignoreNonTradable": false,
+					"typesToDrop": ["WEAPON"],
+					"excluded": ["GRP__PROTECT_GLOBAL", "Nuka", "Sheepsquatch"]
+				}
+			},
+			{
+				"enabled": true,
+				"name": "Inventory Cleanup 03: Misc + Holo + Notes",
+				"showButton": false,
+				"showMessage": false,
+				"hotkey": 120, // F9
+				"amount": 0,
+				"matchMode": "CONTAINS",
+				"itemNames": [
+					"", "", "", "", "", "", "" , "",
+					"", ""
+				],
+				"dropFavorite": false,
+				"dropEquipped": false,
+				"teenoodleTragedyProtection": {
+					"ignoreLegendaries": false,
+					"ignoreNonTradable": false,
+					"typesToDrop": ["MISC", "HOLO", "NOTES"],
+					"excluded": ["GRP__PROTECT_GLOBAL"]
+				}
+			}
+		]
+	},
+	"consume": {
+		"enabled": true,
+		"delay": 10,
+		"configs": [
+			{
+				"enabled": true,
+				"name": "Place PA",
+				"showButton": true,
+				"showMessage": false,
+				"hotkey": 66, // b
+				"delay": 0,
+				"matchMode": "CONTAINS",
+				"itemNames": ["#PA/"],
+				"checkCharacterName": false,
+				"characterName": "none",
+				"checkAccountName": false,
+				"accountName": "none"
+			},
+			{
+				"enabled": true,
+				"name": "Scrapkit",
+				"showButton": true,
+				"showMessage": false,
+				"hotkey": 74, // J
+				"delay": 0,
+				"matchMode": "EXACT",
+				"itemNames": ["Scrap Kit ¢"],
+				"checkCharacterName": false,
+				"characterName": "none",
+				"checkAccountName": false,
+				"accountName": "none"
+			},
+			{
+				"enabled": false,
+				"name": "CON Basic",
+				"showButton": true,
+				"showMessage": true,
+				"hotkey": 112, // F1
+				"delay": 10,
+				"onlyInactiveEffects": true,
+				"matchMode": "EXACT",
+				"itemNames":
+				[
+					"Company Tea",
+					//"Cranberry Relish",
+					//"Brain Fungus Soup",
+					"Steeped Gourd Blossom Tea",
+					"Steeped Fern Flower Tea",
+					["Blight Soup", "Sweet Mutfruit Tea", "Steeped Thistle Tea"],
+					"+Popcorn"
+				],
+				"checkCharacterName": false,
+				"characterName": "none",
+				"checkAccountName": false,
+				"accountName": "none"
+			},
+			{
+				"enabled": true,
+				"name": "CON Raid",
+				"showButton": true,
+				"showMessage": true,
+				"hotkey": 113, // F2
+				"delay": 10,
+				"onlyInactiveEffects": false,
+				"matchMode": "EXACT",
+				"itemNames":
+				[
+					"GRP__SERUMS_USE_RAID",
+					"GRP__FOOD_USE_RAID",
+					"# Hard Lemonade ",
+					"Bobblehead: Big Guns",
+					"Tesla Science 9",
+					"# Overdrive",
+					"+Popcorn"
+				],
+				"checkCharacterName": false,
+				"characterName": "none",
+				"checkAccountName": false,
+				"accountName": "none"
+			},
+			{
+				"enabled": false,
+				"name": "CON AP",
+				"showButton": true,
+				"showMessage": false,
+				"hotkey": 115, // F4
+				"delay": 55,
+				"onlyInactiveEffects": false,
+				"matchMode": "CONTAINS",
+				"itemNames": ["Canned Coffee", "Canned Coffee", "Canned Coffee", "Canned Coffee"],
+				"checkCharacterName": false,
+				"characterName": "none",
+				"checkAccountName": false,
+				"accountName": "none"
+			},
+			{
+				"enabled": true,
+				"name": "EQ STD",
+				"showButton": false,
+				"showMessage": false,
+				"onlyIfNotEquipped": true,
+				"hotkey": 116, // F5
+				"delay": 0,
+				"matchMode": "CONTAINS",
+				"itemNames": ["#A-Marine/", "Shielded Marine Wetsuit"],
+				"checkCharacterName": false,
+				"characterName": "none",
+				"checkAccountName": false,
+				"accountName": "Halvkyrie"
+			},
+			{
+				"enabled": true,
+				"name": "EQ INT",
+				"showButton": false,
+				"showMessage": false,
+				"onlyIfNotEquipped": true,
+				"hotkey": 117, // F6
+				"delay": 0,
+				"matchMode": "CONTAINS",
+				"itemNames": ["#UNY/INT/", "Shielded Flannel Shirt and Jeans", "Tactical Ops Underarmor", "+INT"],
+				"checkCharacterName": false,
+				"characterName": "none",
+				"checkAccountName": false,
+				"accountName": "Halvkyrie"
+			},
+			{
+				"enabled": true,
+				"name": "EQ CHR",
+				"showButton": false,
+				"showMessage": false,
+				"onlyIfNotEquipped": true,
+				"onlyInactiveEffects": false,
+				"hotkey": 118, // F7
+				"delay": 0,
+				"matchMode": "CONTAINS",
+				"itemNames": ["#L-Leather/", "Country Girl Underarmor", "+Aggressive Negotiations", "Grape Mentats"],
+				"checkCharacterName": false,
+				"characterName": "none",
+				"checkAccountName": false,
+				"accountName": "Halvkyrie"
+			},
+			{
+				"enabled": true,
+				"name": "EQ AGI",
+				"showButton": false,
+				"showMessage": false,
+				"onlyIfNotEquipped": true,
+				"hotkey": 119, // F8
+				"delay": 0,
+				"matchMode": "CONTAINS",
+				"itemNames": ["#CE/", "Shielded Harness"],
+				"checkCharacterName": false,
+				"characterName": "none",
+				"checkAccountName": false,
+				"accountName": "Halvkyrie"
+			}
+		]
+	}
+}

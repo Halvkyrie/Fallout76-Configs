@@ -1,1 +1,36 @@
-C:/Program Files (x86)/Steam/steamapps/common/Fallout76/Data/SkipMessagesConfig.json
+{
+	"debug": true,
+	"testRun": false,
+	"SkipDelay": 25,
+	
+	"SkipScrapComponentsView": {
+		"Enabled": true,
+		"Legendary": true,
+		"NonLegendary": false
+	},
+	
+	"AutoUseRepairKit": true,
+	"ScrapLegendary": true,
+	"ScrapPremium": true,
+	
+	"SkipCustom": {
+		
+		// Few examples:
+		// "By performing this action, you will leave your current team. Leave your team?": 0,
+		// "$Loaded_Into_Nuke_Zone": 0,
+		// "Exit Station?": 1,
+		// "Scrap all junk items and move to Scrapbox?": 0 // This doesn't work :(
+		".....":0,
+		"By performing this action, you will leave your current team. Leave your team?": 0,
+		"$QUICKCAMP_Not_Placed_On_Load": 0,
+		"Exit Station?": 1
+
+	},
+	"SkipCustomRegex": {
+		
+		// Few examples:
+		// "Pay [0-9]{1,2} Caps to travel": 0
+		// "Choose a travel point for": 1
+		"Pay [0-9]{1,2} Caps ± to travel": 0
+	}
+}

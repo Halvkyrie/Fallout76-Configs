@@ -1,1 +1,142 @@
-C:/Program Files (x86)/Steam/steamapps/common/Fallout76/Data/RadialMenuLoadoutConfig.json
+{
+	"debug": false,
+	
+	"x": -500,
+	"y": -200,
+	"textSize": 20,
+	"textFont": "$DebugTextFont",
+	"textAlign": "left",
+	
+	"colorEquipped": "0x4ed520",
+	"colorUnequipped": "0xffffff",
+	"formatEquipped": "[E]\t{key}) {name}",
+	"formatUnequipped": "\t{key}) {name}",
+	
+	"formatGamepadButtonInfo": "\n Left/Right) Select loadout\n Start) Equip: {selectedLoadout}",
+	
+	"loadouts": [
+		{
+			"hotkey": 112, //F1
+			"name": "Standard",
+			//"account": ["acc 1", "acc 2", "..."],
+			//"character": ["char 1", "char 2", "..."],
+			"1": "#EPG-UC/Sniper#B/25/90",
+			"2": "#EPG-UC/Auto#B/25/35",
+			"3": "#EPG-UC/Flamer#F/25/35",
+			"4": "#Gauss Shotgun#Med/E/90",
+			"5": "#Resolve Breaker", // "#Resolve Breaker#", "#Tesla Cannon/AC#B/25/90",
+			"6": "#Assaultron Head#F/50/15r",
+			"7": "#Auto Axe#V/40/90",
+			"8": "+Popcorn",
+			"9": "# Berry Mentats",
+			"10": "+Purified Water",
+			"11": "RadAway: Diluted",
+			"12": "# Antibiotics"
+		},
+		{
+			"hotkey": 113, //F2
+			"name": "Raid XP",
+			//"account": ["acc 1", "acc 2", "..."],
+			//"character": ["char 1", "char 2", "..."],
+			"1": "Melon ",
+			"2": ["#GMG#F/25/35/Con"],
+			"3": "# Overdrive",
+			"4": "+INT",
+			"5": "#Gamma Gun#Q/25/INT"
+		},
+		{
+			"hotkey": 114, //F3
+			"name": "Alternate 1",
+			// "account": ["acc 1", "acc 2", "..."],
+			// "character": ["char 1", "char 2", "..."],
+			// "1": "#EPG-UC/Sniper#B/25/90",
+			// "2": "#EPG-UC/Auto#B/25/35",
+			// "3": "#EPG-UC/Flamer#F/25/35",
+			// "4": "#Gauss Shotgun#Med/E/90",
+			"5": "#Tesla Cannon/DC#" // "#Resolve Breaker#", "#Tesla Cannon/AC#B/25/90",
+			// "6": "#Assaultron Head#F/50/15r",
+			// "7": "#Auto Axe#V/40/90",
+			// "8": "+Popcorn",
+			// "9": "# Berry Mentats",
+			// "10": "+Purified Water",
+			// "11": "RadAway: Diluted",
+			// "12": "# Antibiotics"
+		},
+		//{
+		//	"hotkey": 114, //F3
+		//	"name": "Alternate 1",
+		//	//"account": ["acc 1", "acc 2", "..."],
+		//	//"character": ["char 1", "char 2", "..."],
+		//	"1": "#Plasma Caster#B/25/90",
+		//	"2": "#E-Plasma/Auto#B/25/35",
+		//	"3": "#Flamer#B/25/90",
+		//	"4": "#C-Shotgun#F/50L/15r",
+		//	"5": "#Cremator#B/25/90",
+		//	"6": "#Assaultron Head#F/50/15r",
+		//	"7": "#Auto Axe#V/40/90",
+		//	"8": "+Popcorn",
+		//	"9": "# Berry Mentats",
+		//	"10": "+Purified Water",
+		//	"11": "RadAway: Diluted",
+		//	"12": "# Antibiotics"
+		//},
+		{
+			"hotkey": 115, //F4
+			"name": "Raid Alt",
+			//"account": ["acc 1", "acc 2", "..."],
+			//"character": ["char 1", "char 2", "..."],
+			//"2": ["GP#F/25/25/PP", "GP#F/25/35/PP"],
+			"6": "#CE/T",
+			"7": "#CE/LR",
+			"8": "#CE/LL",
+			"9": "#CE/AR",
+			"10": "#CE/AL",
+			"12": "Toxic Goo"
+		},
+		{
+			"hotkey": 116, //F5
+			"name": "Utility Gear",
+			//"account": ["acc 1", "acc 2", "..."],
+			//"character": ["char 1", "char 2", "..."],
+			"5": "#Gamma Gun#",
+			"6": "#Assaultron Head#",
+			"7": "ProSnap" // Camera
+		}
+		/*{
+			"hotkey": 112, //F1
+			"name": "Utility buffs",
+			"1": "canned coffee",
+			"7": "company tea",
+			"8": "berry mentats",
+			"9": "psychobuff",
+			"10": "vintage mire magic moonshine",
+			"11": "rad ant lager",
+			"12": "radaway: diluted"
+		},*/
+		/*{
+			"hotkey": 113, //F2
+			"name": "DMG buffs",
+			"7": "ballistic bock",
+			"8": "high voltage hefe",
+			"9": "overdrive",
+			"10": "psychobuff",
+			"11": "fury"
+		},*/
+		/*{
+			"hotkey": 116, //F5
+			"name": "Tesla",
+			"5": "*tcn",
+			"6": "Tesla"
+		},*/
+		/*{
+			"hotkey": 117, //F6
+			"name": "+3 Cha",
+			"11": "+cha"
+		},*/
+		/*{
+			"hotkey": 118, //F7
+			"name": "Camera",
+			"11": "**cam"
+		}*/
+	]
+}

@@ -1,1 +1,15 @@
-C:/Program Files (x86)/Steam/steamapps/common/Fallout76/Data/ImprovedSocialMenuConfig.json
+{
+	"hideTeamsAvailablePopup": true,
+	"showFriendCount": true,
+	"showRecentCount": true,
+	"createTeamDelay": 25,
+	"showNameFormat": "{accountName} [{characterName}]",
+	"showTeamMemberCount": true,
+	"hideOfflineFriends": false,
+	"hideDisconnectedRecent": false,
+	"defaultSelectionJoin": true,
+	"disableFriendsGrouping": false,
+	"topSortFriends": ["Halvkyrie", "QueenHalvkyrie", "WastelandValkyrie", "AnotherValkyrie", "OtherValkyrie", "EvilPrincessValkyrie", "MrsBlobby", "MrsBIobby", "QueenOfWestTek", "_Trashy"],
+	"hudModLoader": [/*"BuffsMeter", */"HUDChallenges"],
+	"delayModLoader": 30000
+}
