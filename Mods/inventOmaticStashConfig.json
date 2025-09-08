@@ -335,7 +335,7 @@
 			"delay": 25,
 			"types": ["FOOD_WATER"],
 			"matchMode": "CONTAINS",
-			"itemNames": [""],
+			"itemNames": [""], // 
 			"direction": "TO_CONTAINER"
 		},
 		{
