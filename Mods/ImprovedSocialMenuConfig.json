@@ -10,6 +10,6 @@
 	"defaultSelectionJoin": true,
 	"disableFriendsGrouping": false,
 	"topSortFriends": ["Halvkyrie", "QueenHalvkyrie", "WastelandValkyrie", "AnotherValkyrie", "OtherValkyrie", "EvilPrincessValkyrie", "MrsBlobby", "MrsBIobby", "QueenOfWestTek", "_Trashy"],
-	"hudModLoader": [/*"BuffsMeter", */"HUDChallenges"],
+	"hudModLoader": ["BuffsMeter", "HUDChallenges"],
 	"delayModLoader": 30000
 }
