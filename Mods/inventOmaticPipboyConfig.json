@@ -113,7 +113,25 @@
 			},
 			{
 				"enabled": true,
-				"name": "Inventory Cleanup 0B: Condition Based",
+				"name": "Inventory Cleanup 0B: Mixed Drop -10",
+				"showButton": false,
+				"showMessage": false,
+				"hotkey": 120, // F9
+				"amount": -10,
+				"matchMode": "CONTAINS",
+				"itemNames": ["", ""], // 
+				"dropFavorite": true,
+				"dropEquipped": true,
+				"teenoodleTragedyProtection": {
+					"ignoreLegendaries": false,
+					"ignoreNonTradable": false,
+					"typesToDrop": ["WEAPON"],
+					"excluded": ["GRP__PROTECT_GLOBAL", "Sheepsquatch Shard"]
+				}
+			},
+			{
+				"enabled": true,
+				"name": "Inventory Cleanup 0C: Condition Based",
 				"showButton": false,
 				"showMessage": false,
 				"hotkey": 120, // F9
@@ -157,7 +175,7 @@
 				"hotkey": 120, // F9
 				"amount": 0,
 				"matchMode": "CONTAINS",
-				"itemNames": ["", "", ""],
+				"itemNames": ["", ""], // 
 				"dropFavorite": false,
 				"dropEquipped": false,
 				"teenoodleTragedyProtection": {
