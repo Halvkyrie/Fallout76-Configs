@@ -133,14 +133,6 @@
 				"itemNames": ["Plan: Dense Marine", "Plan: Dense Trapper"]
 			},
 			{
-				"enabled": false,
-				"amount": 0,
-				"maxPrice": 2000,
-				"types": ["MISC"],
-				"matchMode": "EXACT",
-				"itemNames": ["Empty Mole Miner Pail"]
-			},
-			{
 				"enabled": true,
 				"amount": 0,
 				"maxPrice": 500,
@@ -153,8 +145,8 @@
 				"amount": 0,
 				"maxPrice": 500,
 				"types": ["JUNK"],
-				"matchMode": "NOT_CONTAINS",
-				"itemNames": ["GRP__PROTECT_GLOBAL"]
+				"matchMode": "ALL",
+				"itemNames": ["-"]
 			},
 			{
 				"enabled": false,
@@ -223,7 +215,16 @@
 				"sellEquipped": false,
 				"types": ["WEAPON"],
 				"matchMode": "CONTAINS",
-				"itemNames": ["", ""]
+				"itemNames": [""] // 
+			},
+			{
+				"enabled": true,
+				"sellFavorite": true,
+				"sellEquipped": true,
+				"amount": -10,
+				"types": ["WEAPON"],
+				"matchMode": "CONTAINS",
+				"itemNames": ["", "", ""] // 
 			}
 		]
 		
@@ -240,7 +241,7 @@
         "transferTaggedForSearch": true,
 		"matchMode": "CONTAINS",
 		"itemNames": ["Cap ±", "Caps ±", "blobby pin", "bobby pin", "Pleasant Valley Claim Ticket",
-			"", "", "", "", "", "", "", "",
+			"", "", "", "", "", "",
 			"Nuka", "Sugar", "Pepper", "Salt", "Spices", "Honey"
 		]
 	},
