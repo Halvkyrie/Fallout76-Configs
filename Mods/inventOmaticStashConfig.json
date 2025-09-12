@@ -10,6 +10,8 @@
 	"notifyLegendaryModLearnedOnScrap": true,
 	"showCategoryItemCount": true,
 	// "defaultSelectedTab": "WEAPON",
+	"scrapItemCountThresholdPopup": 2,
+	"transferItemCountThresholdPopup": 2, 
 	"legendaryModsConfig": {
 		"enabled": false,
 		"showUnknownModsAmongAllChars": false,
