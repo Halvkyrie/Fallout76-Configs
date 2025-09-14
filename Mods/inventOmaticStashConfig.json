@@ -114,7 +114,7 @@
 				"maxPrice": 50,
 				"types": ["AID"],
 				"matchMode": "EXACT",
-				"itemNames": ["Blood Pack "]
+				"itemNames": ["Blood Pack "]
 			},
 			{
 				"enabled": false,
